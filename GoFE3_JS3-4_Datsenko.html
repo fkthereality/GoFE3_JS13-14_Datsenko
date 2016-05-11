@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    </head>
-    <body>
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
 
-        	<script src="js_GoFE3_JS3-4_Datsenko++.js"></script>
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>				
-		</head>
-		<body>
-			<script type="content" id="temp">
-			
-				<%= c.H1 %>
-					
-						<% for(var i=0; i<q.length; i++) { %>
-						<li id="q<%= i %>"><%= q[i].q %><br>
-							<form>							
-									<input type="radio" class="radio" name="r1" id="r1"><%= q[i].A1%><br>	
-									<input type="radio" class="radio" name="r1" id="r2>"><%= q[i].A2%><br>	
-									<input type="radio" class="radio" name="r1" id="r3"><%= q[i].A3%><br>	
-							</form>
-																	
-						<% }; %>
-					</ol>
-				<input type="submit" id="c" value='<%= c.C %>'>
-			</script>			
-    </body>
+<script src="js_GoFE3_JS3-4_Datsenko++.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>				
+</head>
+<body>
+<script type="content" id="temp">
+
+<%= c.H1 %>
+
+<% for(var i=0; i<q.length; i++) { %>
+<li id="q<%= i %>"><%= q[i].q %><br>
+<form>							
+<input type="radio" class="radio" name="r1" id="r1"><%= q[i].A1%><br>	
+<input type="radio" class="radio" name="r1" id="r2>"><%= q[i].A2%><br>	
+<input type="radio" class="radio" name="r1" id="r3"><%= q[i].A3%><br>	
+</form>
+
+<% }; %>
+
+<input type="submit" id="c" value='<%= c.C %>'>
+</script>			
+</body>
 </html>
